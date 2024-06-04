@@ -1,0 +1,39 @@
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.bg-white {
+
+    background-color: white;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+body, p, ul {
+    margin: 0;
+}
+.mb-4 {
+    margin-bottom: 12px;
+}
+.bg-coral {
+    background-color: coral;
+}
+.bg-cadetblue {
+    background-color: cadetblue;
+}
+.bg-goldenrod {
+    background-color: goldenrod;
+}
+.bg-burlywood {
+    background-color: burlywood;
+}
+.font-size-16 {
+    font-size: 16px;
+}

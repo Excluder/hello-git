@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+    <p>Sở thích của bạn là:</p>
+    <div>
+        <input type='radio' name='hobbies' value='1' /> <span>Ăn ngon</span>
+    </div>
+    <div>
+        <input type='checkbox' name='hobbies' value='2' checked /> <span>Ngủ kỹ</span>
+    </div>
+    <div>
+        <input type='radio' name='hobbies' value='3'/> <span>Đi chơi</span>
+    </div>
+    <button>Nộp</button>
+    </form>
+    <p>Bạn đang làm công việc chính là:</p>
+    <select name='job' multiple>
+    <option value='1'>Học sinh / Sinh viên</option>
+    <option value='2' selected>Nhân viên văn phòng</option>
+    <option disabled>------------</option>
+    <option value='3'>Nội trợ</option>
+    <option value='4'>Lập trình viên</option>
+    <option value='5'>Không rõ</option>
+    </select>
+    <p>Lựa chọn phương thức thanh toán</p>
+    <div>
+        <input id='payment-01' type='radio' name='pm' value='1' />
+        <label for='payment-01'>Thanh toán khi nhận hàng</label>
+    </div>
+    <div>
+        <input id='payment-02' type='radio' name='pm' value='2' checked />
+        <label for='payment-02'>Thẻ Visa/Master Card</label>
+    </div>
+    <div>
+        <input id='payment-03' type='radio' name='pm' value='3' disabled />
+        <label for='payment-03'>Tài khoản ngân hàng</label>
+    </div>
+
+</body>
+</html>

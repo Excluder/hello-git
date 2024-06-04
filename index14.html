@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+        .text-blue {
+            color: blue;
+        }
+        .text-pink {
+            color: pink;
+        }
+        .text-yellow {
+            color: yellow;
+        }
+        .text-black {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="s1">wtf</h1>
+    <button onclick="ChangeTextColor('text-yellow')">Add</button>
+    <button onclick="ChangeTextColor2('text-yellow')">Remove</button>
+    <button onclick="ChangeTextColor3('text-yellow')">Toggle</button>
+</body>
+
+<script>		
+    // const listData = [
+	// 	{ id: 1, name: 'Tai nghe Sony WF-1000XM4', price: 2990000 , category: {id:1, name: 'Tai nghe in-ear'}, quantity: 40},
+	// 	{ id: 2, name: 'Tai nghe Sony WH-1000XM4', price: 6690000, category: {id:2, name: 'Tai nghe over-ear'}, quantity: 23 },
+	// 	{ id: 3, name: 'Tai nghe không dây WH-CH510', price: 1190000, category: {id:2, name: 'Tai nghe over-ear'}, quantity: 88 },
+	// 	{ id: 4, name: 'Tai nghe chống ồn WH-1000XM5', price: 6490000, category: {id:2, name: 'Tai nghe over-ear'}, quantity: 12 },
+	// 	{ id: 5, name: 'Loa đeo cổ không dây SRS-NS7', price: 6990000, category: {id:3, name: 'Loa'}, quantity: 1 },
+    // ];
+
+    // const mappedArray = listData.filter(function (o, i, a) {
+    //     return o.price > 5000000;
+    // })
+    // console.log(mappedArray);
+    // const mappedArray2 = listData.filter(function (o, i, a) {
+    //     return (o.price > 1000000 && o.price < 5000000) && (o.category.id === 2);
+    // })
+    // console.log(mappedArray2);
+    // const mappedArray3 = listData.map(function (o, i, a) {
+    //     thing = o.price * 2;
+    //     return o;
+    // })
+    // console.log(mappedArray3);
+    
+    
+    function ChangeTextColor(x) {
+        const target = document.querySelector('#s1');
+        if(target) {
+            target.classList.add(x)
+        }
+    }
+    function ChangeTextColor2(x) {
+        const target = document.querySelector('#s1');
+        if(target) {
+            target.classList.remove(x)
+        }
+    }
+    function ChangeTextColor3(x) {
+        const target = document.querySelector('#s1');
+        if(target) {
+            target.classList.toggle(x)
+        }
+    }
+</script>
+</html>

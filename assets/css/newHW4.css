@@ -1,0 +1,100 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+}
+/* .inner-content {
+
+}
+
+.header-brand {
+
+} */
+.brand-name {
+    font-size: 20px;
+}
+/* .nav-list {
+
+}
+.nav-item {
+
+} */
+.nav-link {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    border-bottom: 2px solid transparent;
+    margin: 0 12px;
+}
+.nav-link.active {
+    color: #15803d;
+    border-color: #15803d;
+    font-weight: 500;
+    border-radius: 0px;
+}
+.nav-link:hover {
+    transition: 0.3s ease;
+    background-color: #15803d47;
+    color: #15803d;
+}
+/* .group-button {
+    
+} */
+.header-action-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.btn-login {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.btn-login:hover {
+    transition: 0.3s ease;
+    background-color: #f0fafb;
+    border-color: #f0fafb;
+}
+.btn-buy {
+    color: white;
+    background-color: #15803d;
+    border: 1px solid #15803d;
+}
+.btn-buy:hover {
+    transition: 0.3s ease;
+    background-color: #126b33;
+    border-color: #126b33;
+}
+.banner-img {
+    width: 100%;
+}
+.product-section-title {
+    font-size: 60px;
+}
+.product-card {
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.25s ease;
+}
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    height: 52px;
+}
+.product-dimension {
+    font-size: 14px;
+}
+.product-weight {
+    font-size: 14px;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}

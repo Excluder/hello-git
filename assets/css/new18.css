@@ -1,0 +1,78 @@
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.my-custom-chat-plugin {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid #909090;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-header {
+    height: 30px;
+    background-color: #e70ab0;
+    border-bottom: 2px solid white;
+}
+
+.partner-name {
+    color: white;
+    margin: 0;
+    padding: 4px 12px;
+}
+
+.chat-body {
+    height: 420px;
+    overflow-y: scroll;
+    background-color: #da1aca;
+}
+
+.typing-block{
+
+}
+
+#my-msg{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 6px 10px;
+    border-radius: 1px 1px 2px 2px;
+}
+
+.msg{
+    padding: 6px 12px;
+    max-width: 220px;
+    width: fit-content;
+    min-width: 100px;
+    margin-bottom: 12px;
+}
+.partner-msg{
+    background-color: #fff;
+    border-radius: 4px 8px 8px 0;
+}
+
+.my-msg{
+    background-color: #2775f2;
+    border-radius:  8px 4px 0px 8px;
+    color: #fff;
+    margin-left: auto;
+}
+.btn-submit-msg{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 4px ;
+    background-color: #0cb9c5;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}

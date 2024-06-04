@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="./assets/css/new.css">
+</head>
+<body>
+    <div class="full-form borderBox">
+        <div class="full-body borderBox roboto">
+            <div class="form-header whiteBackground py4 px6 roboto margin-bot4">
+                <h2 style="margin-top: 1px; margin-bottom: 1px;">Để lại lời nhắn sau tiếng bíp</h2>
+                <p>Vui lòng điền các thông tin dưới đây để hoàn thành bản báo cáo</p>
+                <p>* Lưu ý: mọi thông tin trong form đều là giả định.</p>
+            </div>
+            <form action="">
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Họ và Tên
+                        </p>
+                        <input checked type="text" placeholder="Họ và tên" required minlength="6" class="borderBox width-100 form-input">
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Email
+                        </p>
+                        <input type="email" placeholder="Email" required minlength="6" class="borderBox width-100 form-input">
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Số điện thoại
+                        </p>
+                        <input type="text" placeholder="Số điện thoại" required minlength="6" class="borderBox width-100 form-input">
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Độ tuổi của bạn là:
+                        </p>
+                        <label for="18" class="block">
+                            <input type="radio" id="18" name="age" class="form-input-radio" value="1">
+                            18 - 23 tuổi
+                        </label>
+                        <label for="23" class="block">
+                            <input type="radio" id="23" name="age" class="form-input-radio" value="2">
+                            23 - 28 tuổi
+                        </label>
+                        <label for="28" class="block">
+                            <input type="radio" id="28" name="age" class="form-input-radio" value="3">
+                            > 28 tuổi
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Sở thích của bạn:
+                        </p>
+                        <label for="outdoor" class="block">
+                            <input type="checkbox" id="outdoor" class="form-input-radio">
+                            Hoạt động ngoài trời cùng bạn bè / gia đình
+                        </label>
+                        <label for="exercise" class="block">
+                            <input type="checkbox" id="exercise" class="form-input-radio">
+                            Hoạt động thể chất
+                        </label>
+                        <label for="book" class="block">
+                            <input type="checkbox" id="book" class="form-input-radio">
+                            Đọc sách (bao gồm sách khoa học, truyện, tiểu thuyết)
+                        </label>
+                        <label for="social" class="block">
+                            <input type="checkbox" id="social" class="form-input-radio">
+                            Sử dụng mạng xã hội.
+                        </label>
+                        <label for="plant" class="block">
+                            <input type="checkbox" id="plant" class="form-input-radio">
+                            Chăm sóc vật nuôi/cây cảnh
+                        </label>
+                        <label for="other" class="block">
+                            <input type="checkbox" id="other" class="form-input-radio">
+                            Khác (Vui lòng ghi câu trả lời của bạn ở dưới)
+                        </label>
+                        <input type="text" placeholder="VD: Chế tạo..." required minlength="6" class="borderBox width-100 form-input">
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Nghề nghiệp của bạn hiện tại:
+                        </p>
+                        <select name="job" id="job" class="input-select width-100">
+                            <option value="1" selected disabled>- Vui lòng lựa chọn -</option>
+                            <option value="2">Nội trợ</option>
+                            <option value="3">Nhân viên văn phòng</option>
+                            <option value="4">Nhân viên CSKH</option>
+                            <option value="5">Người lao động tự do</option>
+                            <option value="6">Học sinh / Sinh viên</option>
+                            <option value="7">Giảng viên / Giáo viên</option>
+                            <option value="8" disabled>- Khác -</option>
+                            <option value="9">Tôi không tìm thấy đúng ngành nghề của mình</option>
+                            <option value="10">Xin lỗi, tôi không muốn gửi thông tin này</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form whiteBackground margin-bot4 borderBox">
+                    <div>
+                        <p class="input-header">
+                            Đánh giá của bạn về dịch vụ:
+                        </p>
+                        <div class="width-50 inline">
+                            <span>Chất lượng sản phẩm:</span>
+                            <p>
+                                <select name="job" id="job" class="input-select width-100">
+                                    <option value="1" selected disabled>- Vui lòng lựa chọn -</option>
+                                    <option value="2">1 - Sản phẩm quá tệ, tôi sẽ giới thiệu với người thân để không ai mua phải cái
+                                        thứ này</option>
+                                    <option value="3">2 - Sản phẩm khó sử dụng/kém chất lượng, tôi sẽ tránh dùng sản phẩm này</option>
+                                    <option value="4">3 - Sản phẩm ở mức độ tạm chấp nhận được</option>
+                                    <option value="5">4 - Sản phẩm tốt, tôi sẽ sử dụng lại</option>
+                                    <option value="4">5 - Tuyệt vời, tôi sẽ giới thiệu với người thân để dùng ké khi họ mua nó</option>
+                                    <option value="5" disabled>- Khác -</option>
+                                    <option value="5">Xin lỗi, tôi không muốn gửi thông tin này</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="width-50 inline">
+                            <span>Chất lượng CSKH:</span>
+                            <p>
+                                <select name="job" id="job" class="input-select width-100">
+                                    <option value="1" selected disabled>- Vui lòng lựa chọn -</option>
+                                    <option value="2">1 - CSKH tồi tệ, không chấp nhận được. Làm tôi cảm giác như tôi mới là thứ phải trả lại nơi sản xuất chứ không phải sản phẩm này</option>
+                                    <option value="3">2 - CSKH kém, không có kỹ năng nghiệp vụ. Lại còn mắng tôi ???</option>
+                                    <option value="4">3 - CSKH ổn, nhưng chưa tốt và chưa đủ làm tôi hài lòng</option>
+                                    <option value="5">4 - CSKH thân thiện, có nghiệp vụ và xử lý tốt. Nhưng tôi thích con gái chăm sóc
+                                        hơn.</option>
+                                    <option value="6">5 - Tuyệt vời, tôi sẽ cưới cái chị mà đã tốn tận 1 tiếng để giải thích cho tôi
+                                        tại sao nên mua cái thứ này</option>
+                                    <option value="8" disabled>- Khác -</option>
+                                    <option value="10">Xin lỗi, tôi không muốn gửi thông tin này</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="button">
+                        <span style="text-align: center; color: white;">Hoàn Thành</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

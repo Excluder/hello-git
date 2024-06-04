@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/system.css">
+</head>
+<body>
+    <img id="fullImage" src="" alt="">
+    <p class="new" name="p1">
+        click de xem them
+    </p>
+    <img class="imges cursor-pointer" style="margin-right: 80px;" src="https://py.processing.org/tutorials/pixels/imgs/tint1.jpg" height="100px" alt="">
+    <img class="imges cursor-pointer" style="margin-right: 80px;" src="https://filterforge.com/more/help/images/size200.jpg" height="100px" alt="">
+    <img class="imges cursor-pointer" style="margin-right: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-uH_WTG2lXzke2VyHPZOa7E2z8ekIgzPEddcy6aVxQ&s" height="100px" alt="">
+</body>
+
+<script>
+    const bigImg = document.querySelector('#fullImage')
+    const listImg = document.querySelectorAll('.imges')
+    listImg.forEach(function(item, index) {
+        item.addEventListener('click', function() {
+            const img = item.getAttribute('src')
+            bigImg.setAttribute('src', img)
+        })
+    })
+</script>
+</html>

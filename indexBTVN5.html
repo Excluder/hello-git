@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/systemBTVN.css">
+    <link rel="stylesheet" href="./assets/css/styleBTVN5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="d-flex border-box mx-0">
+            <div id="sideBar" class="sideBar">
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="mb-3 d-flex flex-column align-items-center">
+                            <img height="60px" src="https://tuanphamhp.github.io/bai-tap/assets/images/coffee-logo-design-creative-idea-logo-elements-2.png" alt="">
+                            <span>Coffee Lovers</span>
+                        </li>
+                        <li class="text">
+                            ADMIN
+                        </li>
+                        <li class="nav-item d-flex align-items-center active" id="page">
+                            <i class="fa-solid fa-shop"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Trang Chủ</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center enable" id="ship">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Đơn Hàng</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center enable" id="stat">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Thống Kê</span>
+                        </li>
+                        <li class="text">
+                            SUPPORT
+                        </li>
+                        <li class="nav-item d-flex align-items-center enable" id="announce">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Thông Báo</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center enable" id="complaint">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Khiếu Nại</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center enable" id="contact">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span class="nav-text" style="margin-left: 6px;">Liên Hệ</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-content">
+                <div class="button-box">
+                    <div class="button d-flex align-items-center justify-content-center cursor-pointer">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="main-content w-100">
+                    <h2>Main Content</h2>
+                    <table class="table w-100">
+                        <tr style="font-weight: 700;">
+                            <td colspan="1">
+                                #
+                            </td>
+                            <td colspan="2">
+                                First
+                            </td>
+                            <td colspan="3">
+                                Last
+                            </td>
+                            <td colspan="3">
+                                Handle
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td colspan="1" style="font-weight: 700;">
+                                1
+                            </td>
+                            <td colspan="2">
+                                Mark
+                            </td>
+                            <td colspan="3">
+                                Otto
+                            </td>
+                            <td colspan="3">
+                                @mdo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" style="font-weight: 700;">
+                                2
+                            </td>
+                            <td colspan="2">
+                                Jacob
+                            </td>
+                            <td colspan="3">
+                                Thornman
+                            </td>
+                            <td colspan="3">
+                                @fat
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td colspan="1" style="font-weight: 700;">
+                                3
+                            </td>
+                            <td colspan="5">
+                                Larry the Bird
+                            </td>
+                            <td colspan="3">
+                                @twitter
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const eachBox = document.querySelectorAll('.nav-item')
+    eachBox.forEach(function (item) {
+        item.addEventListener('click', function () {
+            obj = document.querySelector('.active')
+            obj.classList.add('enable')
+            obj.classList.remove('active')
+            item.classList.add('active')
+            item.classList.remove('enable')
+        })
+    })
+
+    const clicked = document.querySelector('.button')
+    clicked.addEventListener('click', function() {
+        const collapse = document.querySelector('#sideBar')
+        if(collapse) {
+            collapse.classList.toggle('mini-size')
+            collapse.classList.toggle('sideBar')
+            document.querySelectorAll('.nav-item').forEach(function (item) {
+                item.classList.toggle('d-flex')
+                item.classList.toggle('align-items-center')
+                item.classList.toggle('justify-content-center')
+            })
+            document.querySelectorAll('.text').forEach(function(item) {
+                item.classList.toggle('d-none')
+            })
+            document.querySelectorAll('.nav-text').forEach(function(item) {
+                item.classList.toggle('d-none')
+            })
+        }
+    })
+</script>
+
+</html>

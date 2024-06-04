@@ -1,0 +1,6 @@
+.tag-a:hover {
+    background-color: cadetblue;
+}
+.my-example-block:hover .p-tag-example {
+    color: red;
+}
